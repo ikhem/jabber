@@ -27,7 +27,7 @@ io.on('connection', (socket)=>{
     io.emit('stats', {numClients: numClients});
 
     console.log('Connected clients:', numClients);
-    io.emit('left', { message: 'User had disconnected'});
+    io.emit('left', { message: 'User has disconnected'});
   });
 });
 
